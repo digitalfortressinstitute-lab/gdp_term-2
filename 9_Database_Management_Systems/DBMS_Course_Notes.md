@@ -8,6 +8,29 @@ This module covers the fundamentals of both Relational (SQL) and Non-Relational 
 
 Relational databases use Structured Query Language (SQL) and organize data into tables with predefined schemas.
 
+### 0. Installation
+
+#### Linux (Ubuntu/Debian)
+To install MySQL Server and the client:
+```bash
+sudo apt update
+sudo apt install mysql-server
+```
+To secure the installation:
+```bash
+sudo mysql_secure_installation
+```
+To check if the service is running:
+```bash
+sudo systemctl status mysql
+```
+
+#### Windows
+1.  Download the **MySQL Installer** from the [official MySQL website](https://dev.mysql.com/downloads/installer/).
+2.  Run the installer and choose "Developer Default" or "Server only".
+3.  Follow the setup wizard, set a **Root Password**, and keep the default port (3306).
+4.  Once installed, search for "MySQL Command Line Client" in the Start menu or add the MySQL `bin` folder to your **System Environment Variables (PATH)** to use it in any terminal.
+
 ### 1. Terminal Basics
 To log into MySQL from the terminal:
 ```bash
@@ -177,6 +200,33 @@ mysql -u root -p shop_db < shop_db.sql
 ## Part 2: NoSQL Databases (MongoDB)
 
 NoSQL databases are document-oriented, using JSON-like formats (BSON) and are schema-less.
+
+### 0. Installation
+
+#### Linux (Ubuntu/Debian)
+To install MongoDB, you typically need to add their repository first:
+```bash
+curl -fsSL https://pgp.mongodb.com/server-7.0.asc | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/mongodb-server-7.0.gpg
+echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list
+sudo apt update
+sudo apt install -y mongodb-org
+```
+To start the MongoDB service:
+```bash
+sudo systemctl start mongod
+sudo systemctl enable mongod
+```
+To check if the service is running:
+```bash
+sudo systemctl status mongod
+```
+
+#### Windows
+1.  Download the **MongoDB Community Server** `.msi` from the [official MongoDB website](https://www.mongodb.com/try/download/community).
+2.  Run the installer, choose "Complete" installation.
+3.  Ensure "Install MongoDB as a Service" is checked.
+4.  Optionally install **MongoDB Compass** (graphical UI).
+5.  Download the **MongoDB Shell (mongosh)** separately and add its `bin` folder to your **PATH** to use the `mongosh` command in your terminal.
 
 ### 1. Terminal Basics
 To enter the MongoDB shell (mongosh):
