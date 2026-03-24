@@ -24,7 +24,7 @@ This repository contains all course materials for **GDP Term 2** — a hands-on,
 | 3 | Calculus & Discrete Mathematics | Logic, sets, graphs and calculus basics | 📖 Coming Soon | 💻 Coming Soon |
 | 4 | [Software Engineering Principles](#4-software-engineering-principles) | SOLID, Design Patterns, DRY, KISS, YAGNI | [📖 Notes](./4_Software_Engineering_Principles/Software_Engineering_Principles_Course_Notes.md) | [💻 Exercises](./4_Software_Engineering_Principles/Software_Engineering_Principles_Exercises.py) |
 | 5 | [Web Development](#5-web-development) | React.js, Tailwind CSS and Next.js | [📖 Notes](./5_Web_Development/Web_Development_Course_Notes.md) | [💻 Exercises](./5_Web_Development/Web_Development_Exercises.jsx) |
-| 6 | Backend Development | Java and Spring Boot fundamentals | 📖 Coming Soon | 💻 Coming Soon |
+| 6 | [Backend Development](#6-backend-development) | Java Basics, OOP and Spring Boot fundamentals | [📖 Notes](./6_Backend_Development/) | [💻 Examples](./6_Backend_Development/) |
 | 7 | RESTful APIs | Design, implementation, middleware and security | 📖 Coming Soon | 💻 Coming Soon |
 | 8 | Authentication & Authorization | JWT and OAuth basics | 📖 Coming Soon | 💻 Coming Soon |
 | 9 | Database Management Systems | SQL and NoSQL | 📖 Coming Soon | 💻 Coming Soon |
@@ -116,8 +116,54 @@ Modern full-stack web development using the most in-demand technologies. From bu
 
 ---
 
-### 6–12. Coming Soon
-Modules 6 through 12 are currently being prepared and will be added progressively throughout the term.
+### 6. Backend Development
+> 📁 [6_Backend_Development](./6_Backend_Development/)
+
+From Java fundamentals all the way to building a production-style REST API with Spring Boot. This module follows a clear learning path: **Java Basics → OOP → Spring Boot**.
+
+**Learning Path:**
+```
+Java Basics  →  Java OOP  →  Spring Boot
+```
+
+**Sub-modules:**
+
+#### 6.1 Java Basics
+- Hello World, syntax and comments
+- Data types: primitives and reference types
+- Control flow: if/else, switch, loops
+- Arrays and iteration
+- Methods, overloading and recursion
+- Collections: ArrayList, HashMap, HashSet, Streams
+
+#### 6.2 Java OOP
+- Classes and objects, constructors, `this`
+- Encapsulation: `private`, getters/setters with validation
+- Inheritance: `extends`, `super`, `@Override`
+- Polymorphism: runtime (method overriding) and compile-time (overloading)
+- Abstraction: `abstract` classes and template method pattern
+- Interfaces: implementing multiple interfaces, `default` methods, lambdas
+
+#### 6.3 Spring Boot
+- Project setup via [start.spring.io](https://start.spring.io)
+- `@RestController` and request mapping annotations
+- Service layer with business logic
+- JPA repositories and entity modelling
+- Full CRUD API (GET, POST, PUT, DELETE) with proper HTTP status codes
+
+**Files:**
+- 📖 [Module Overview](./6_Backend_Development/README.md)
+- 📖 [Java Basics Notes](./6_Backend_Development/6.1_Java_Basics/Java_Basics_Course_Notes.md)
+- 📖 [Java OOP Notes](./6_Backend_Development/6.2_Java_OOP/Java_OOP_Course_Notes.md)
+- 📖 [Spring Boot Notes](./6_Backend_Development/6.3_Spring_Boot/Spring_Boot_Course_Notes.md)
+- 💻 [Java Basics Examples](./6_Backend_Development/6.1_Java_Basics/examples/)
+- 💻 [Java OOP Examples](./6_Backend_Development/6.2_Java_OOP/examples/)
+- 💻 [Spring Boot Examples](./6_Backend_Development/6.3_Spring_Boot/examples/)
+
+---
+
+### 7–12. Coming Soon
+Modules 7 through 12 are currently being prepared and will be added progressively throughout the term.
 
 ---
 
