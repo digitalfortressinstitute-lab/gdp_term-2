@@ -25,8 +25,8 @@ This repository contains all course materials for **GDP Term 2** — a hands-on,
 | 4 | [Software Engineering Principles](#4-software-engineering-principles) | SOLID, Design Patterns, DRY, KISS, YAGNI | [📖 Notes](./4_Software_Engineering_Principles/Software_Engineering_Principles_Course_Notes.md) | [💻 Exercises](./4_Software_Engineering_Principles/Software_Engineering_Principles_Exercises.py) |
 | 5 | [Web Development](#5-web-development) | React.js, Tailwind CSS and Next.js | [📖 Notes](./5_Web_Development/Web_Development_Course_Notes.md) | [💻 Exercises](./5_Web_Development/Web_Development_Exercises.jsx) |
 | 6 | [Backend Development](#6-backend-development) | Java Basics, OOP and Spring Boot fundamentals | [📖 Notes](./6_Backend_Development/) | [💻 Examples](./6_Backend_Development/) |
-| 7 | RESTful APIs | Design, implementation, middleware and security | 📖 Coming Soon | 💻 Coming Soon |
-| 8 | Authentication & Authorization | JWT and OAuth basics | 📖 Coming Soon | 💻 Coming Soon |
+| 7 | [RESTful APIs](#7-restful-apis) | Design, implementation, middleware and security | [📖 Notes](./7_RESTful_APIs/RESTful_APIs_Course_Notes.md) | [💻 Examples](./7_RESTful_APIs/examples/) |
+| 8 | [Authentication & Authorization](#8-authentication--authorization) | JWT and OAuth basics | [📖 Notes](./8_Authentication_and_Authorization/Authentication_Authorization_Course_Notes.md) | [💻 Examples](./8_Authentication_and_Authorization/examples/) |
 | 9 | Database Management Systems | SQL and NoSQL | 📖 Coming Soon | 💻 Coming Soon |
 | 10 | Mobile App Development | React Native with TypeScript | 📖 Coming Soon | 💻 Coming Soon |
 | 11 | Testing & Debugging | Unit testing, integration testing and debugging tools | 📖 Coming Soon | 💻 Coming Soon |
@@ -162,8 +162,72 @@ Java Basics  →  Java OOP  →  Spring Boot
 
 ---
 
-### 7–12. Coming Soon
-Modules 7 through 12 are currently being prepared and will be added progressively throughout the term.
+### 7. RESTful APIs
+> 📁 [7_RESTful_APIs](./7_RESTful_APIs/)
+
+Takes your Spring Boot knowledge to production level. You will design, implement, secure, and test REST APIs following industry best practices.
+
+**Topics covered:**
+- REST design principles — Richardson Maturity Model, HTTP verbs, status codes
+- URL naming conventions and API versioning (`/api/v1/`)
+- DTOs (Request, Response, Update) with Bean Validation (`@Valid`)
+- Pagination and sorting with `Pageable`
+- Middleware — Filters (`jakarta.servlet.Filter`) and Interceptors (`HandlerInterceptor`)
+- Global exception handling with `@RestControllerAdvice`
+- API Key authentication (`X-API-Key` header)
+- CORS configuration for frontend integration
+- Rate limiting (Token Bucket algorithm)
+- Input sanitisation and security headers
+
+**Files:**
+- 📖 [Module Overview](./7_RESTful_APIs/README.md)
+- 📖 [Course Notes](./7_RESTful_APIs/RESTful_APIs_Course_Notes.md)
+- 💻 [01 — REST Design](./7_RESTful_APIs/examples/01_REST_Design.java)
+- 💻 [02 — DTO & Validation](./7_RESTful_APIs/examples/02_DTO_Validation.java)
+- 💻 [03 — Exception Handling](./7_RESTful_APIs/examples/03_Exception_Handling.java)
+- 💻 [04 — Filters & Interceptors](./7_RESTful_APIs/examples/04_Filters_Interceptors.java)
+- 💻 [05 — API Key Security](./7_RESTful_APIs/examples/05_API_Key_Security.java)
+- 💻 [06 — CORS & Rate Limiting](./7_RESTful_APIs/examples/06_CORS_Rate_Limiting.java)
+- 💻 [07 — Full Secure API](./7_RESTful_APIs/examples/07_Full_Secure_API.java)
+
+---
+
+### 8. Authentication & Authorization
+> 📁 [8_Authentication_and_Authorization](./8_Authentication_and_Authorization/)
+
+Takes your REST API knowledge to the next level by adding full user identity management. You will implement industry-standard authentication and authorization patterns using Spring Security, JWT, and OAuth2.
+
+**Topics covered:**
+- Authentication vs Authorization — AuthN, AuthZ, HTTP 401 vs 403
+- Session-based vs token-based (stateless JWT) auth
+- JWT structure: header, payload (claims), signature
+- Access tokens (15 min) + Refresh tokens (7 days)
+- BCrypt password hashing — `BCryptPasswordEncoder`
+- Spring Security filter chain — `SecurityFilterChain`, `SessionCreationPolicy.STATELESS`
+- `UserDetails` interface — implementing it on your User entity
+- `JwtAuthenticationFilter` — validating tokens on every request
+- Register, Login, and Refresh endpoints
+- Role-Based Access Control (RBAC) — `@PreAuthorize`, `hasRole()`
+- Ownership checks — user can only access their own resources
+- OAuth2 Authorization Code Flow — Google / GitHub login
+- Token logout / blacklisting
+
+**Files:**
+- 📖 [Module Overview](./8_Authentication_and_Authorization/README.md)
+- 📖 [Course Notes](./8_Authentication_and_Authorization/Authentication_Authorization_Course_Notes.md)
+- 💻 [01 — Auth Fundamentals](./8_Authentication_and_Authorization/examples/01_Auth_Fundamentals.java)
+- 💻 [02 — Password Encoding](./8_Authentication_and_Authorization/examples/02_Password_Encoding.java)
+- 💻 [03 — Spring Security Setup](./8_Authentication_and_Authorization/examples/03_Spring_Security_Setup.java)
+- 💻 [04 — JWT Implementation](./8_Authentication_and_Authorization/examples/04_JWT_Implementation.java)
+- 💻 [05 — Register & Login](./8_Authentication_and_Authorization/examples/05_Register_Login.java)
+- 💻 [06 — Role-Based Access](./8_Authentication_and_Authorization/examples/06_Role_Based_Access.java)
+- 💻 [07 — OAuth2 Basics](./8_Authentication_and_Authorization/examples/07_OAuth2_Basics.java)
+- 💻 [08 — Full Auth API](./8_Authentication_and_Authorization/examples/08_Full_Auth_API.java)
+
+---
+
+### 9–12. Coming Soon
+Modules 9 through 12 are currently being prepared and will be added progressively throughout the term.
 
 ---
 
