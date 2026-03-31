@@ -1,38 +1,163 @@
-React Native & Tailwind CSS — Complete Beginner Notes
-Written for students who are just getting started
- 
-First Things First — What Even Is React Native?
-Okay, let's start from scratch. You probably already know what a website is — it's something you visit in a browser like Chrome or Safari. But what about apps on your phone? Like Instagram, TikTok, or WhatsApp? Those are mobile apps, and they live on your phone, not in a browser.
-React Native is a tool that lets you build those kinds of mobile apps using JavaScript — the same programming language used for websites.
-Here's the cool part: with React Native, you write your code once, and it works on both Android phones and iPhones (iOS). You don't need to learn two separate languages. That's a huge deal.
- 
-What Is Regular React? (And How Is It Different?)
-Before React Native, there was just React. React is a JavaScript library created by Facebook/Meta for building websites and web apps — things that run in your browser.
-Think of it like this:
-React = building things for the web (browser)
-React Native = building things for mobile phones (Android + iOS)
-They look very similar in code, but there are some important differences. We'll go through those shortly.
- 
-Key Words You Need To Know (Glossary)
-Before we dive in, let's define some important words you'll keep seeing:
-Component — A piece of your app's screen. Think of it like a LEGO brick. Your whole app is made of many components put together. A button is a component. A text box is a component. A whole screen can be a component.
-JSX — A special way of writing code that looks like HTML but is actually JavaScript. It lets you describe what your screen should look like right inside your code. Example: <Text>Hello!</Text>
-Props — Short for "properties." These are like settings you pass into a component to customize it. For example, you can pass a color or a label to a button component.
-State — Information that your app remembers and can change over time. For example, if a user clicks a button 5 times, the number 5 is "state." When state changes, the screen automatically updates.
-Styling — How you make things look pretty — colors, sizes, spacing, fonts, etc.
-View — In React Native, a View is like a div in HTML. It's a box that holds other things.
-Text — In React Native, all words on screen must be inside a <Text> component. You can't just type words freely like in HTML.
-StyleSheet — React Native's built-in way to write styles (like CSS, but in JavaScript).
-NativeWind — A library that brings Tailwind CSS into React Native. We'll explain this fully later.
-className — In regular React (web), you use className to apply CSS styles to elements.
-style — In React Native, you use style instead of className to apply styles.
- 
-Part 1 — Regular React (For Websites)
-Let's look at how you'd build something in regular React first, so we can compare it to React Native later.
-In regular React, you're building for the browser. You use HTML-like elements such as div, p, h1, button, img, etc.
-Here's a simple example — a card showing a user's name:
-jsx// Regular React (for websites)
+# React Native & NativeWind — Class Exercises Workbook
+**Beginner Level | 16 Sections | Hands-On Practice**
 
+
+---
+
+## Section 1 — What Is React Native?
+
+### Exercise 1.1 — True or False
+Write **TRUE** or **FALSE** next to each statement.
+
+| # | Statement | Your Answer |
+|---|-----------|-------------|
+| 1 | React Native lets you build mobile apps using JavaScript. | |
+| 2 | You need separate codebases for Android and iOS in React Native. | |
+| 3 | React (without "Native") is used for building things in a web browser. | |
+| 4 | React Native apps run inside a web browser like Chrome. | |
+| 5 | Writing code once in React Native can produce both an Android and iPhone app. | |
+
+---
+
+### Exercise 1.2 — Fill in the Blank
+Complete each sentence using the words in the box.
+
+> **Word Bank:** `JavaScript` &nbsp;|&nbsp; `browser` &nbsp;|&nbsp; `mobile` &nbsp;|&nbsp; `Facebook/Meta` &nbsp;|&nbsp; `once`
+
+1. React Native is a tool that lets you build ______________ apps for your phone.
+2. React was originally created by ______________ for building web apps.
+3. Regular React runs in a ______________, while React Native runs on a phone.
+4. With React Native, you write your code ______________ and it works on both platforms.
+5. Both React and React Native use ______________ as their programming language.
+
+---
+
+### Exercise 1.3 — Short Answer
+Answer in 1–2 sentences in your own words.
+
+**Q1. What is the biggest advantage of using React Native instead of building two separate apps?**
+
+_Answer:_ ___________________________________________________________________________
+
+___________________________________________________________________________________
+
+**Q2. What kind of apps does regular React build, and what does React Native build?**
+
+_Answer:_ ___________________________________________________________________________
+
+___________________________________________________________________________________
+
+---
+
+## Section 2 — What Is Regular React?
+
+### Exercise 2.1 — Complete the Comparison
+Fill in the missing column based on what you know.
+
+| | Regular React | React Native |
+|---|---|---|
+| **Runs on** | Web browser | |
+| **Created by** | | Facebook/Meta |
+| **Primary language** | | |
+| **Used for** | | Mobile apps |
+
+---
+
+### Exercise 2.2 — Short Answer
+
+**Q1. What does "library" mean in "React is a JavaScript library"?**
+
+_Answer:_ ___________________________________________________________________________
+
+**Q2. Can you use React Native to build a website? Why or why not?**
+
+_Answer:_ ___________________________________________________________________________
+
+___________________________________________________________________________________
+
+---
+
+### Exercise 2.3 — Discuss
+React and React Native look very similar in code but have important differences.
+
+List **two things** that are the same between them, and **two things** that are different.
+
+| Same | Different |
+|------|-----------|
+| 1. | 1. |
+| 2. | 2. |
+
+---
+
+## Section 3 — Key Terms & Glossary
+
+### Exercise 3.1 — Match the Term to Its Definition
+Write the correct letter next to each term.
+
+| Term | Letter |
+|------|--------|
+| Component | |
+| JSX | |
+| Props | |
+| State | |
+| Styling | |
+| View | |
+| Text | |
+| StyleSheet | |
+| NativeWind | |
+| className | |
+
+**Definitions:**
+
+- **A** — React Native's built-in way to write styles in JavaScript objects.
+- **B** — Settings passed into a component to customize it (like a color or a label).
+- **C** — A library that brings Tailwind CSS class names into React Native.
+- **D** — A piece of your app's screen, like a LEGO brick.
+- **E** — Information the app remembers that can change over time; causes the screen to update.
+- **F** — A special syntax that looks like HTML but is written inside JavaScript.
+- **G** — How you control colors, sizes, spacing, and fonts.
+- **H** — In React Native, the equivalent of a `<div>` in HTML — a container box.
+- **I** — The attribute used in regular React (web) to apply CSS class names.
+- **J** — In React Native, all words on screen must be inside this component.
+
+---
+
+### Exercise 3.2 — Explain in Your Own Words
+Describe each term as if you were explaining it to a classmate who has never coded before.
+
+**Component:**
+
+___________________________________________________________________________________
+
+**State:**
+
+___________________________________________________________________________________
+
+**Props:**
+
+___________________________________________________________________________________
+
+**JSX:**
+
+___________________________________________________________________________________
+
+---
+
+### Exercise 3.3 — Use the Terms
+Write a sentence using each of the following terms correctly in context.
+
+1. *Component:* _____________________________________________________________________
+2. *Props:* __________________________________________________________________________
+3. *State:* __________________________________________________________________________
+
+---
+
+## Section 4 — Part 1: Regular React (For Websites)
+
+### Exercise 4.1 — Reading Code
+Study the code below and answer the questions underneath it.
+
+```jsx
 function UserCard() {
   return (
     <div style={{ padding: 20, backgroundColor: '#f0f0f0', borderRadius: 10 }}>
@@ -44,162 +169,305 @@ function UserCard() {
     </div>
   );
 }
-What's happening here?
-We have a div (a box), inside it is a heading h1, a paragraph p, and a button. Each element has styles applied directly using the style attribute. This works fine for websites.
- 
-Part 2 — React Native (For Mobile Phones)
-Now here's the same card, but written in React Native:
-jsx// React Native (for mobile phones)
+```
 
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+1. What HTML element acts as the outer container? ______________________
+2. What does `backgroundColor: '#f0f0f0'` do? ______________________
+3. How are styles applied in this code? ______________________
+4. What would you change to make the heading text red? ______________________
+5. What does `borderRadius: 10` do to the container? ______________________
 
-function UserCard() {
+---
+
+### Exercise 4.2 — Spot the Mistake
+Each snippet has one error. Identify the mistake and write the correct version.
+
+**Snippet A:**
+```jsx
+function Greeting() {
   return (
-    <View style={styles.card}>
-      <Text style={styles.name}>John Doe</Text>
-      <Text style={styles.job}>Software Developer</Text>
-      <TouchableOpacity style={styles.button}>
-        <Text style={styles.buttonText}>Follow</Text>
-      </TouchableOpacity>
-    </View>
+    <div>
+      Hello World
+    </div>
   );
 }
+```
+_This is actually valid in regular React (web). Why would this same code fail in React Native?_
 
-const styles = StyleSheet.create({
-  card: {
-    padding: 20,
-    backgroundColor: '#f0f0f0',
-    borderRadius: 10,
-  },
-  name: {
-    fontSize: 24,
-    color: '#333',
-  },
-  job: {
-    fontSize: 16,
-    color: '#666',
-  },
-  button: {
-    backgroundColor: 'blue',
-    padding: 10,
-    borderRadius: 5,
-  },
-  buttonText: {
-    color: 'white',
-    textAlign: 'center',
-  },
-});
-What changed?
-Let's go through it one by one:
-div became View — React Native doesn't use HTML tags. A View is the mobile version of a div.
-h1 and p became Text — All text on screen must be wrapped in <Text>. There's no h1, p, or span in React Native.
-button became TouchableOpacity — React Native uses TouchableOpacity for buttons because it gives a nice fade effect when you tap it. There's also Pressable and TouchableHighlight which do similar things.
-StyleSheet.create({}) — Instead of writing styles inline or in a CSS file, React Native uses StyleSheet.create() to organize styles. It's like CSS but written in JavaScript objects.
-No className — In regular React for the web, you'd write className="card" and put the styles in a separate CSS file. In React Native, there are no CSS files. Everything lives in the JavaScript file using style={styles.someName}.
- 
-The Big Differences — Side By Side
-Here's a quick comparison table so the differences are crystal clear:
-FeatureRegular React (Web)React Native (Mobile)Box/Container<div><View>Text<p>, <h1>, <span><Text>Button<button><TouchableOpacity> or <Pressable>Image<img src="..." /><Image source={require('./img.png')} />Input<input type="text" /><TextInput />StylingCSS files or classNameStyleSheet.create() or inline style={}ScrollingCSS overflow or browser default<ScrollView> componentListmap() + HTML tags<FlatList> component
- 
-Part 3 — What Is Tailwind CSS?
-Now let's talk about Tailwind CSS. This is a very popular styling tool.
-Normally when you style something, you'd write custom CSS like this:
-css.card {
-  background-color: blue;
-  padding: 16px;
-  border-radius: 8px;
-}
-Tailwind takes a different approach. Instead of writing your own CSS, Tailwind gives you tiny pre-made class names that you just apply directly in your code. Each class name does one specific thing.
-For example:
-bg-blue-500 = sets background color to a specific shade of blue
-p-4 = adds padding of 16px on all sides
-rounded-lg = adds large border radius (rounded corners)
-text-white = sets text color to white
-text-xl = sets font size to extra large
-So instead of writing CSS, you just combine these class names:
-jsx// Regular React with Tailwind CSS (web)
+_Answer:_ ___________________________________________________________________________
 
-function UserCard() {
+**Snippet B:**
+```jsx
+function Card() {
   return (
-    <div className="bg-gray-100 p-5 rounded-xl">
-      <h1 className="text-2xl font-bold text-gray-800">John Doe</h1>
-      <p className="text-base text-gray-500">Software Developer</p>
-      <button className="bg-blue-500 text-white px-5 py-2 rounded-md">
-        Follow
+    <div style='padding: 20px; color: red;'>
+      <h1>Title</h1>
+    </div>
+  );
+}
+```
+_Problem:_ __________________________________________________________________________
+
+_Fixed:_ ____________________________________________________________________________
+
+---
+
+### Exercise 4.3 — Write It
+Write a simple React (web) component called `AnnouncementCard`. It should display:
+- A heading: "School Trip Friday!"
+- A paragraph: "Remember to bring your permission slip."
+- A button: "Got it"
+
+Use inline styles. No Tailwind yet.
+
+```jsx
+function AnnouncementCard() {
+  return (
+    // Write your JSX here
+
+
+
+  );
+}
+```
+
+---
+
+## Section 5 — Part 2: React Native (For Mobile Phones)
+
+### Exercise 5.1 — Web vs Mobile Tag Translation
+For each regular React (web) element, write the correct React Native equivalent.
+
+| Regular React (Web) | React Native Equivalent |
+|---------------------|------------------------|
+| `<div>` | |
+| `<p>` | |
+| `<h1>` | |
+| `<button>` | |
+| `<input type="text" />` | |
+| `<img src="..." />` | |
+| `className="..."` | |
+| `onClick={...}` | |
+
+---
+
+### Exercise 5.2 — Rewrite in React Native
+Convert this web React component to React Native. Use `StyleSheet.create()` for styles and replace all HTML tags with the correct React Native components.
+
+**Original (Web React):**
+```jsx
+function ProfileCard() {
+  return (
+    <div style={{ padding: 16, backgroundColor: '#fff', borderRadius: 8 }}>
+      <h1 style={{ fontSize: 20, color: '#111' }}>Jane Smith</h1>
+      <p style={{ fontSize: 14, color: '#666' }}>UI Designer</p>
+      <button style={{ backgroundColor: 'green', color: 'white', padding: 8 }}>
+        Connect
       </button>
     </div>
   );
 }
-See how clean that is? No separate CSS file, no StyleSheet — just small descriptive class names right in your JSX. This is what makes Tailwind so popular.
- 
-Understanding Tailwind Class Names — How Do They Work?
-Tailwind class names follow a pattern. Once you learn the pattern, you can guess most class names without even looking them up.
-Colors:
-bg-red-500 = red background (500 is the shade, from 100 light to 900 dark)
-text-blue-700 = dark blue text
-border-green-300 = light green border
-Spacing (padding and margin):
-p-4 = padding on all 4 sides (16px)
-px-4 = padding left and right only (x = horizontal)
-py-4 = padding top and bottom only (y = vertical)
-pt-4 = padding top only
-m-4 = margin on all 4 sides
-mx-auto = margin left and right set to auto (centers something horizontally)
-Sizing:
-w-full = width 100% of parent
-w-1/2 = width 50%
-h-10 = height of 40px
-max-w-md = maximum width medium (good for cards)
-Typography (text):
-text-sm = small text
-text-base = normal text size
-text-lg = large text
-text-xl = extra large
-text-2xl, text-3xl etc = getting bigger
-font-bold = bold text
-font-medium = medium weight text
-text-center = center aligned text
-text-left = left aligned
-italic = italic text
-Flexbox (layout):
-flex = turns on flex layout
-flex-row = children line up horizontally (side by side)
-flex-col = children stack vertically (top to bottom)
-items-center = vertically center children
-justify-center = horizontally center children
-justify-between = spread children with space between them
-gap-4 = space of 16px between children
-Borders:
-border = adds a thin border
-border-2 = slightly thicker border
-rounded = slight rounded corners
-rounded-lg = more rounded
-rounded-full = completely round (circle if same width and height)
-Shadows:
-shadow = small shadow
-shadow-md = medium shadow
-shadow-lg = large shadow
- 
-Part 4 — Tailwind In React Native with NativeWind
-Here's the catch: Tailwind CSS was originally made for the web. React Native apps are not web apps, so Tailwind doesn't work in React Native out of the box.
-That's where NativeWind comes in.
-NativeWind is a package that brings Tailwind's class name system into React Native. It lets you use className on your React Native components just like you would in regular React web development.
-It's like a bridge between Tailwind and React Native.
- 
-Setting Up NativeWind (Step By Step)
-Step 1 — Create a new Expo app
-Expo is the easiest way to start a React Native project. In your terminal, run:
-bashnpx create-expo-app MyApp
-cd MyApp
-Step 2 — Install NativeWind and Tailwind
-bashnpm install nativewind
-npm install --save-dev tailwindcss
-Step 3 — Set up Tailwind config
-Run this to create a Tailwind config file:
-bashnpx tailwindcss init
-Then open the tailwind.config.js file that was created and update it:
-js// tailwind.config.js
+```
 
+**Your React Native Version:**
+```jsx
+import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+
+function ProfileCard() {
+  return (
+    // Write your JSX here
+
+
+
+  );
+}
+
+const styles = StyleSheet.create({
+  // Write your styles here
+
+
+
+});
+```
+
+---
+
+### Exercise 5.3 — Explain the Differences
+In your notes, the differences between Regular React and React Native are listed. Using that table, answer:
+
+**Q1. Why does React Native use `<TouchableOpacity>` instead of `<button>`?**
+
+_Answer:_ ___________________________________________________________________________
+
+**Q2. Why does React Native use `StyleSheet.create({})` instead of CSS files?**
+
+_Answer:_ ___________________________________________________________________________
+
+---
+
+## Section 6 — Part 3: What Is Tailwind CSS?
+
+### Exercise 6.1 — Decode the Class Names
+Write what each Tailwind class does in plain English.
+
+| Tailwind Class | What It Does |
+|----------------|-------------|
+| `bg-blue-500` | |
+| `p-4` | |
+| `text-white` | |
+| `rounded-xl` | |
+| `font-bold` | |
+| `text-center` | |
+| `w-full` | |
+| `shadow-md` | |
+| `border` | |
+| `italic` | |
+
+---
+
+### Exercise 6.2 — Build the Style
+Write the `className` string using only Tailwind classes to achieve each result. You may combine as many classes as needed.
+
+1. **Dark blue background, white bold text, fully rounded corners (pill shape):**
+
+   `className="` ___________________________________________________________________`"`
+
+2. **Light gray card with padding on all sides, a medium shadow, and slightly rounded corners:**
+
+   `className="` ___________________________________________________________________`"`
+
+3. **Extra-large bold text, centered, with a red color:**
+
+   `className="` ___________________________________________________________________`"`
+
+---
+
+### Exercise 6.3 — Pattern Recognition
+What pattern do each of these pairs share? Write the rule you notice.
+
+| Pair | Pattern You See |
+|------|----------------|
+| `p-2` / `p-8` | |
+| `bg-red-300` / `bg-red-700` | |
+| `px-4` / `py-4` | |
+| `text-sm` / `text-3xl` | |
+| `mt-4` / `mb-4` | |
+
+---
+
+### Exercise 6.4 — Compare Approaches
+Look at this regular CSS and its Tailwind equivalent.
+
+```css
+/* Regular CSS */
+.card {
+  background-color: blue;
+  padding: 16px;
+  border-radius: 8px;
+}
+```
+
+```jsx
+{/* Tailwind equivalent */}
+<div className="bg-blue-500 p-4 rounded-lg">...</div>
+```
+
+**Q. What is one advantage of the Tailwind approach? What might be one disadvantage?**
+
+_Advantage:_ ________________________________________________________________________
+
+_Disadvantage:_ _____________________________________________________________________
+
+---
+
+## Section 7 — Understanding Tailwind Class Names
+
+### Exercise 7.1 — Spacing Classes
+Match each spacing class to what it applies padding or margin to.
+
+| Class | What it targets |
+|-------|----------------|
+| `p-4` | |
+| `px-4` | |
+| `py-4` | |
+| `pt-4` | |
+| `pb-4` | |
+| `m-4` | |
+| `mx-auto` | |
+| `mt-6` | |
+
+---
+
+### Exercise 7.2 — Colors & Shades
+Answer these questions about Tailwind's color system.
+
+1. In `bg-red-500`, what does the number `500` represent? ______________________________
+2. Would `bg-red-100` be lighter or darker than `bg-red-900`? ______________________________
+3. Write the class for a medium green text color: ______________________________
+4. Write the class for a very light gray background: ______________________________
+
+---
+
+### Exercise 7.3 — Flexbox Layout
+Using Tailwind flex classes, write the `className` for each layout requirement.
+
+1. **Children sitting side by side (horizontal):** `className="` ___________________`"`
+2. **Children stacked vertically, centered in the middle of the screen:** `className="` ___________________`"`
+3. **Children spread apart with equal space between them:** `className="` ___________________`"`
+4. **A row where children are vertically centered and have a gap of 16px between them:** `className="` ___________________`"`
+
+---
+
+## Section 8 — Part 4: Tailwind in React Native with NativeWind
+
+### Exercise 8.1 — True or False
+
+| # | Statement | Your Answer |
+|---|-----------|-------------|
+| 1 | Tailwind CSS works in React Native out of the box. | |
+| 2 | NativeWind is a package that brings Tailwind into React Native. | |
+| 3 | After installing NativeWind, you can use `className` in React Native. | |
+| 4 | NativeWind replaces React Native components like `View` and `Text`. | |
+| 5 | NativeWind acts like a bridge between Tailwind and React Native. | |
+
+---
+
+### Exercise 8.2 — Why NativeWind?
+Answer in your own words.
+
+**Q1. Why doesn't regular Tailwind CSS work in React Native on its own?**
+
+_Answer:_ ___________________________________________________________________________
+
+___________________________________________________________________________________
+
+**Q2. What problem does NativeWind solve for developers who already know Tailwind?**
+
+_Answer:_ ___________________________________________________________________________
+
+___________________________________________________________________________________
+
+---
+
+## Section 9 — Setting Up NativeWind
+
+### Exercise 9.1 — Put the Steps in Order
+The setup steps below are shuffled. Write the numbers 1–5 to show the correct order.
+
+| Step | Correct Order |
+|------|--------------|
+| Update `babel.config.js` and add `"nativewind/babel"` as a plugin. | |
+| Run `npx tailwindcss init` to create a Tailwind config file. | |
+| Run `npm install nativewind` and `npm install --save-dev tailwindcss`. | |
+| Create a new Expo app using `npx create-expo-app MyApp`. | |
+| Edit `tailwind.config.js` to list your source files in the `content` array. | |
+
+---
+
+### Exercise 9.2 — Config File Questions
+Use this `tailwind.config.js` to answer the questions below.
+
+```js
 module.exports = {
   content: ["./App.{js,jsx,ts,tsx}", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
@@ -207,192 +475,173 @@ module.exports = {
   },
   plugins: [],
 }
-The content line tells Tailwind where your code files are so it knows which class names to include.
-Step 4 — Update babel.config.js
-Open babel.config.js and add "nativewind/babel" as a plugin:
-js// babel.config.js
+```
 
-module.exports = function (api) {
-  api.cache(true);
-  return {
-    presets: ['babel-preset-expo'],
-    plugins: ["nativewind/babel"],  // add this line
-  };
-};
-Babel is a tool that processes your code before it runs. Adding NativeWind here lets it understand Tailwind class names.
-Now you're ready to use Tailwind in React Native!
- 
-Part 5 — React Native With NativeWind (The Good Stuff)
-Here's our same UserCard example, now written using NativeWind in React Native:
-jsx// React Native with NativeWind (Tailwind)
+1. What does the `content` array tell Tailwind? ________________________________________
 
-import { View, Text, TouchableOpacity } from 'react-native';
+   ___________________________________________________________________________________
 
-function UserCard() {
+2. What does `**/*.{js,jsx,ts,tsx}` mean in the path? ___________________________________
+
+   ___________________________________________________________________________________
+
+3. Why do we add `"nativewind/babel"` to `babel.config.js`? _____________________________
+
+   ___________________________________________________________________________________
+
+4. What is Babel, in simple terms? ____________________________________________________
+
+---
+
+### Exercise 9.3 — Terminal Commands
+Write the correct terminal command for each task.
+
+| Task | Command |
+|------|---------|
+| Create a new Expo project called `SchoolApp` | |
+| Install NativeWind | |
+| Install Tailwind CSS as a dev dependency | |
+| Generate the Tailwind config file | |
+
+---
+
+## Section 10 — Part 5: React Native with NativeWind
+
+### Exercise 10.1 — Three-Way Comparison
+Match each snippet (A, B, C) to its correct method label. Write the letter.
+
+**Snippet A:**
+```jsx
+<div className="p-4 bg-gray-200 rounded-xl">
+  <h1 className="text-xl font-bold text-gray-800">Hello</h1>
+</div>
+```
+
+**Snippet B:**
+```jsx
+<View className="p-4 bg-gray-200 rounded-xl">
+  <Text className="text-xl font-bold text-gray-800">Hello</Text>
+</View>
+```
+
+**Snippet C:**
+```jsx
+const styles = StyleSheet.create({ card: { padding: 16, backgroundColor: '#E5E7EB' } });
+<View style={styles.card}>
+  <Text style={{ fontSize: 20, fontWeight: 'bold' }}>Hello</Text>
+</View>
+```
+
+| Method | Snippet Letter |
+|--------|---------------|
+| React Native with StyleSheet (Traditional) | |
+| Regular React (Web) with Tailwind | |
+| React Native with NativeWind | |
+
+---
+
+### Exercise 10.2 — Styling Migration
+Convert this traditional `StyleSheet` component to use NativeWind `className` only. Keep the same visual result.
+
+**Original:**
+```jsx
+import { View, Text, StyleSheet } from 'react-native';
+
+function Badge({ label }) {
   return (
-    <View className="bg-gray-100 p-5 rounded-xl">
-      <Text className="text-2xl font-bold text-gray-800">John Doe</Text>
-      <Text className="text-base text-gray-500">Software Developer</Text>
-      <TouchableOpacity className="bg-blue-500 px-5 py-2 rounded-md mt-3">
-        <Text className="text-white text-center font-semibold">Follow</Text>
-      </TouchableOpacity>
-    </View>
-  );
-}
-Look at how clean that is! No StyleSheet.create() at the bottom. No separate styles object. Just className with Tailwind class names — just like in regular web React.
- 
-Big Comparison — All Three Approaches Side By Side
-Let's look at all three methods for the same card — regular React native styles, web React with Tailwind, and React Native with NativeWind:
-Method 1: React Native with StyleSheet (Traditional)
-jsximport { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
-
-function Card() {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Hello World</Text>
-      <TouchableOpacity style={styles.button}>
-        <Text style={styles.buttonText}>Click Me</Text>
-      </TouchableOpacity>
+    <View style={styles.badge}>
+      <Text style={styles.text}>{label}</Text>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    padding: 16,
-    backgroundColor: '#e5e7eb',
-    borderRadius: 12,
+  badge: {
+    backgroundColor: '#3B82F6',
+    paddingHorizontal: 12,
+    paddingVertical: 4,
+    borderRadius: 9999,
   },
-  title: {
-    fontSize: 20,
-    fontWeight: 'bold',
-    color: '#1f2937',
-    marginBottom: 12,
-  },
-  button: {
-    backgroundColor: '#3b82f6',
-    paddingVertical: 10,
-    paddingHorizontal: 20,
-    borderRadius: 8,
-  },
-  buttonText: {
+  text: {
     color: 'white',
-    textAlign: 'center',
+    fontWeight: 'bold',
+    fontSize: 12,
   },
 });
-Method 2: Regular React (Web) with Tailwind
-jsxfunction Card() {
-  return (
-    <div className="p-4 bg-gray-200 rounded-xl">
-      <h1 className="text-xl font-bold text-gray-800 mb-3">Hello World</h1>
-      <button className="bg-blue-500 py-2 px-5 rounded-lg text-white">
-        Click Me
-      </button>
-    </div>
-  );
-}
-Method 3: React Native with NativeWind (Tailwind)
-jsximport { View, Text, TouchableOpacity } from 'react-native';
+```
 
-function Card() {
+**Your NativeWind Version:**
+```jsx
+import { View, Text } from 'react-native';
+
+function Badge({ label }) {
   return (
-    <View className="p-4 bg-gray-200 rounded-xl">
-      <Text className="text-xl font-bold text-gray-800 mb-3">Hello World</Text>
-      <TouchableOpacity className="bg-blue-500 py-2 px-5 rounded-lg">
-        <Text className="text-white text-center">Click Me</Text>
-      </TouchableOpacity>
+    <View className="_______________________________________________">
+      <Text className="_______________________________________________">{label}</Text>
     </View>
   );
 }
-Notice how Method 2 (web React + Tailwind) and Method 3 (React Native + NativeWind) look almost identical. The only difference is the component names — div vs View, h1 vs Text, button vs TouchableOpacity. The className styling is the exact same!
-This is the beauty of learning NativeWind. If you already know Tailwind from web development, you can jump into React Native styling almost immediately.
- 
-Real World Example — A Login Screen
-Let's build something more complete so you can see how everything works together. Here's a login screen using React Native + NativeWind:
-jsximport { View, Text, TextInput, TouchableOpacity, SafeAreaView } from 'react-native';
-import { useState } from 'react';
+```
 
-export default function LoginScreen() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+---
 
-  function handleLogin() {
-    console.log('Logging in with:', email, password);
-  }
+### Exercise 10.3 — Spot the Key Difference
+Look at Method 2 (Web React + Tailwind) and Method 3 (React Native + NativeWind) from your notes.
 
-  return (
-    <SafeAreaView className="flex-1 bg-white">
-      <View className="flex-1 px-6 justify-center">
+**Q. They look almost identical. What is the only real difference between them?**
 
-        {/* Title Section */}
-        <Text className="text-4xl font-bold text-gray-900 mb-2">
-          Welcome Back
-        </Text>
-        <Text className="text-base text-gray-500 mb-10">
-          Sign in to your account
-        </Text>
+_Answer:_ ___________________________________________________________________________
 
-        {/* Email Input */}
-        <Text className="text-sm font-medium text-gray-700 mb-1">
-          Email Address
-        </Text>
-        <TextInput
-          className="border border-gray-300 rounded-lg px-4 py-3 mb-5 text-base text-gray-800"
-          placeholder="you@example.com"
-          value={email}
-          onChangeText={setEmail}
-          keyboardType="email-address"
-        />
+___________________________________________________________________________________
 
-        {/* Password Input */}
-        <Text className="text-sm font-medium text-gray-700 mb-1">
-          Password
-        </Text>
-        <TextInput
-          className="border border-gray-300 rounded-lg px-4 py-3 mb-8 text-base text-gray-800"
-          placeholder="Enter your password"
-          value={password}
-          onChangeText={setPassword}
-          secureTextEntry
-        />
+---
 
-        {/* Login Button */}
-        <TouchableOpacity
-          className="bg-blue-600 py-4 rounded-xl items-center mb-4"
-          onPress={handleLogin}
-        >
-          <Text className="text-white font-bold text-base">Sign In</Text>
-        </TouchableOpacity>
+## Section 11 — Real World Example: A Login Screen
 
-        {/* Sign Up Link */}
-        <View className="flex-row justify-center">
-          <Text className="text-gray-500">Don't have an account? </Text>
-          <TouchableOpacity>
-            <Text className="text-blue-600 font-semibold">Sign Up</Text>
-          </TouchableOpacity>
-        </View>
+### Exercise 11.1 — Component Identification
+Use the login screen code from your notes and answer each question.
 
-      </View>
-    </SafeAreaView>
-  );
-}
-Let's break down the new things:
-SafeAreaView — A special container that makes sure your content doesn't hide behind the phone's status bar or notch at the top. Always use this as your outermost container for screens.
-TextInput — The mobile version of <input type="text" /> from HTML. It lets users type text.
-value={email} — Links the input to the email state variable.
-onChangeText={setEmail} — Every time the user types a character, it updates the email state. onChangeText is React Native's version of the web's onChange.
-secureTextEntry — Hides the characters as dots, like a password field. Just adding this prop (no value needed) turns it on.
-onPress={handleLogin} — React Native's version of onClick. Called when user taps the button.
-keyboardType="email-address" — Tells the phone to show a keyboard optimized for email addresses (with @, .com etc).
-flex-1 — Makes the element take up all remaining space. Very commonly used in React Native.
-items-center — Centers children horizontally when using flex-col, or vertically when using flex-row.
-justify-center — Centers children the opposite way.
- 
-Conditional Styling — Changing Styles Based On State
-Sometimes you want to change how something looks depending on what's happening. For example, a button that turns green when selected.
-jsximport { TouchableOpacity, Text } from 'react-native';
-import { useState } from 'react';
+1. What component wraps the whole screen and protects against the phone's notch? ______________________
+2. What hook stores the email and password values? ______________________
+3. What prop on `TextInput` hides characters as dots? ______________________
+4. What prop replaces `onClick` in React Native? ______________________
+5. What does `keyboardType="email-address"` do? ______________________
+6. What does `flex-1` do when applied to the outermost `View`? ______________________
 
+---
+
+### Exercise 11.2 — Add a Feature
+The login screen from your notes has email and password fields, and a Sign In button. 
+
+**Your task:** Add a "Forgot Password?" text link below the Sign In button. It should be centered, use small gray text, and print `"Forgot password tapped"` to the console when pressed.
+
+```jsx
+{/* Add your Forgot Password link below the Sign In button */}
+
+
+```
+
+---
+
+### Exercise 11.3 — Explain the Props
+Write a plain-English explanation for each prop used in the login screen's TextInput.
+
+| Prop | What It Does |
+|------|-------------|
+| `value={email}` | |
+| `onChangeText={setEmail}` | |
+| `secureTextEntry` | |
+| `placeholder="you@example.com"` | |
+| `keyboardType="email-address"` | |
+
+---
+
+## Section 12 — Conditional Styling
+
+### Exercise 12.1 — Reading Code
+Study this component and answer the questions below.
+
+```jsx
 function SelectableButton() {
   const [selected, setSelected] = useState(false);
 
@@ -407,59 +656,170 @@ function SelectableButton() {
     </TouchableOpacity>
   );
 }
-What's happening:
-selected ? 'bg-green-500' : 'bg-gray-200' — This is a ternary operator. It means: "if selected is true, use bg-green-500, otherwise use bg-gray-200."
-The backticks ` and ${} let you mix regular text with JavaScript expressions inside a string. This is called a template literal.
-setSelected(!selected) — Flips the value. If selected was true, it becomes false. If false, it becomes true. The ! means "opposite of."
- 
-FlatList — Displaying Lists of Data
-In React Native, when you have a long list of items (like a feed or contacts), you use FlatList instead of just mapping through an array. FlatList is optimized for performance — it only renders items that are currently visible on screen.
-jsximport { View, Text, FlatList, TouchableOpacity } from 'react-native';
+```
 
-const contacts = [
-  { id: '1', name: 'Alice Johnson', role: 'Designer' },
-  { id: '2', name: 'Bob Smith', role: 'Developer' },
-  { id: '3', name: 'Carol White', role: 'Manager' },
-  { id: '4', name: 'David Lee', role: 'Developer' },
+1. What is the starting value of `selected`? ______________________
+2. What does `!selected` mean? ______________________
+3. What background shows when `selected` is `false`? ______________________
+4. What background shows when `selected` is `true`? ______________________
+5. What is a template literal, and why is it used here? ______________________
+
+---
+
+### Exercise 12.2 — Ternary Operator Practice
+Write the ternary expression for each scenario.
+
+1. If `isLoggedIn` is true, show `"Welcome back!"`, otherwise show `"Please log in."`:
+
+   ```js
+   {isLoggedIn ? __________________ : __________________}
+   ```
+
+2. If `isActive` is true, apply `bg-blue-500`, otherwise `bg-gray-300`:
+
+   ```jsx
+   className={`py-2 px-4 ${__________________________________________}`}
+   ```
+
+3. If `hasError` is true, apply `border-red-500`, otherwise `border-gray-300`:
+
+   ```jsx
+   className={`border rounded-lg ${__________________________________________}`}
+   ```
+
+---
+
+### Exercise 12.3 — Build It: Toggle Button
+Write a component called `LikeButton`. It should:
+- Start with the label **"Like"** on a gray background.
+- When tapped, change to **"Liked ❤️"** on a red background with white text.
+- Use `useState` and conditional `className`.
+
+```jsx
+import { TouchableOpacity, Text } from 'react-native';
+import { useState } from 'react';
+
+function LikeButton() {
+  // Write your code here
+
+
+
+
+}
+```
+
+---
+
+## Section 13 — FlatList: Displaying Lists of Data
+
+### Exercise 13.1 — FlatList Props Quiz
+
+| Description | Prop Name |
+|-------------|-----------|
+| The array of items you want to display. | |
+| A function that returns a unique ID string for each item. | |
+| A function that returns the JSX to render for each item. | |
+
+---
+
+### Exercise 13.2 — Reading FlatList Code
+Study the contacts list from your notes and answer these questions.
+
+1. What does `keyExtractor={(item) => item.id}` do and why is it needed? ______________________
+
+   ___________________________________________________________________________________
+
+2. What does `name[0]` return if `name` is `"Alice Johnson"`? ______________________
+
+3. What is the purpose of the `ContactItem` function? ______________________
+
+   ___________________________________________________________________________________
+
+4. Why is `FlatList` better than using `.map()` for a list of 500 contacts? ______________________
+
+   ___________________________________________________________________________________
+
+---
+
+### Exercise 13.3 — Build a FlatList
+You have this data:
+
+```js
+const fruits = [
+  { id: '1', name: 'Mango', color: 'Yellow' },
+  { id: '2', name: 'Apple', color: 'Red' },
+  { id: '3', name: 'Grape', color: 'Purple' },
+];
+```
+
+Write a complete component called `FruitList` that renders this data using `FlatList`. Each item should show the fruit's name in bold and its color in gray text below it.
+
+```jsx
+import { View, Text, FlatList } from 'react-native';
+
+const fruits = [
+  { id: '1', name: 'Mango', color: 'Yellow' },
+  { id: '2', name: 'Apple', color: 'Red' },
+  { id: '3', name: 'Grape', color: 'Purple' },
 ];
 
-function ContactItem({ name, role }) {
+function FruitItem({ name, color }) {
   return (
-    <TouchableOpacity className="flex-row items-center bg-white p-4 mb-2 rounded-xl shadow-sm">
-      <View className="w-12 h-12 bg-blue-500 rounded-full items-center justify-center mr-4">
-        <Text className="text-white text-lg font-bold">{name[0]}</Text>
-      </View>
-      <View>
-        <Text className="text-base font-semibold text-gray-800">{name}</Text>
-        <Text className="text-sm text-gray-500">{role}</Text>
-      </View>
-    </TouchableOpacity>
+    // Write FruitItem JSX here
+
+
+
   );
 }
 
-export default function ContactsList() {
+export default function FruitList() {
   return (
-    <View className="flex-1 bg-gray-100 p-4">
-      <Text className="text-2xl font-bold text-gray-900 mb-4">Contacts</Text>
-      <FlatList
-        data={contacts}
-        keyExtractor={(item) => item.id}
-        renderItem={({ item }) => (
-          <ContactItem name={item.name} role={item.role} />
-        )}
-      />
-    </View>
+    // Write FlatList here
+
+
+
   );
 }
-Breaking it down:
-data={contacts} — The array of items you want to display.
-keyExtractor={(item) => item.id} — A function that gives each item a unique key. React needs this to keep track of which item is which.
-renderItem={({ item }) => ...} — A function that says "for each item in the data, render this component." The item is one element from your array.
-name[0] — Gets the first character of the name string. So "Alice Johnson" becomes "A". Used here as an avatar placeholder.
- 
-ScrollView vs FlatList — Which To Use?
-ScrollView — Use this when you have a small number of items, or when the content is a mix of different things (not a list). ScrollView renders everything at once.
-jsximport { ScrollView, View, Text } from 'react-native';
+```
+
+---
+
+## Section 14 — ScrollView vs FlatList
+
+### Exercise 14.1 — Choose the Right Component
+For each scenario, write whether you would use `ScrollView` or `FlatList`, and explain why in one sentence.
+
+| Scenario | ScrollView or FlatList? | Why? |
+|----------|------------------------|------|
+| A profile screen with a photo, bio, stats, and a few buttons. | | |
+| A social media feed with hundreds of posts from an API. | | |
+| An "About" page with paragraphs of text and images. | | |
+| A list of 200 product items from a database. | | |
+| A checkout summary screen with 5–6 line items. | | |
+
+---
+
+### Exercise 14.2 — Short Answer
+
+**Q1. What does "FlatList only renders items currently visible on screen" mean? Why does this matter?**
+
+_Answer:_ ___________________________________________________________________________
+
+___________________________________________________________________________________
+
+**Q2. What does "ScrollView renders everything at once" mean as a drawback?**
+
+_Answer:_ ___________________________________________________________________________
+
+___________________________________________________________________________________
+
+---
+
+### Exercise 14.3 — Rewrite with ScrollView
+Take the `ProfileScreen` from your notes and add two more sections to it: a "Recent Activity" heading and a "Settings" heading, each followed by a short paragraph. Keep it wrapped in `ScrollView`.
+
+```jsx
+import { ScrollView, View, Text } from 'react-native';
 
 function ProfileScreen() {
   return (
@@ -467,105 +827,130 @@ function ProfileScreen() {
       <Text className="text-3xl font-bold mt-6">Profile</Text>
       <View className="h-40 bg-gray-200 rounded-xl mt-4" />
       <Text className="text-lg mt-4 text-gray-700">Bio information here...</Text>
-      {/* more content */}
+
+      {/* Add Recent Activity section here */}
+
+
+      {/* Add Settings section here */}
+
+
     </ScrollView>
   );
 }
-FlatList — Use this when you have a long or unknown number of similar items (like messages, posts, contacts). FlatList only renders what's visible, so it's much faster with large data.
-The rule of thumb: short mixed content = ScrollView. Long list of same-type items = FlatList.
- 
-Navigation Between Screens
-Real apps have multiple screens. To move between screens in React Native, you use a library called React Navigation.
-Install it:
-bashnpm install @react-navigation/native
-npm install @react-navigation/native-stack
-npm install react-native-screens react-native-safe-area-context
-Here's a simple two-screen app:
-jsx// App.js
+```
 
+---
+
+## Section 15 — Navigation Between Screens
+
+### Exercise 15.1 — Navigation Terminology
+Match each term to its correct description.
+
+| Term | Description |
+|------|-------------|
+| `NavigationContainer` | |
+| `Stack.Navigator` | |
+| `Stack.Screen` | |
+| `navigation.navigate('Profile')` | |
+| `navigation.goBack()` | |
+| `route.params` | |
+| `initialRouteName` | |
+
+**Descriptions:**
+- **A** — Goes back to the previous screen.
+- **B** — Where data passed via `navigate()` is accessed in the receiving screen.
+- **C** — Registers a screen with a name and component inside the navigator.
+- **D** — Wraps the entire app — required for navigation to work.
+- **E** — Navigates to the screen named "Profile".
+- **F** — Sets which screen opens first when the app starts.
+- **G** — Manages a stack of screens, like a deck of cards you push on and pop off.
+
+---
+
+### Exercise 15.2 — Passing Data Between Screens
+Complete the missing code.
+
+**HomeScreen — Send the data:**
+```jsx
+// Send name: 'Daniel' and age: 17 to the Profile screen
+navigation.navigate('Profile', {
+  _______________: '_______________',
+  _______________: _______________,
+});
+```
+
+**ProfileScreen — Receive and display it:**
+```jsx
+export default function ProfileScreen({ _______________ }) {
+  const { name, age } = _______________.params;
+
+  return (
+    <View className="flex-1 items-center justify-center">
+      <Text className="text-2xl font-bold">{_______________}</Text>
+      <Text className="text-lg text-gray-600">Age: {_______________}</Text>
+    </View>
+  );
+}
+```
+
+---
+
+### Exercise 15.3 — Build a Two-Screen App
+Write the `App.js`, `HomeScreen.jsx`, and `AboutScreen.jsx` for a simple two-screen app.
+
+- `HomeScreen` should have a title "Home" and a button "Go to About".
+- `AboutScreen` should have a title "About" and a "Go Back" button.
+- Style everything with NativeWind.
+
+```jsx
+// App.js
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import HomeScreen from './screens/HomeScreen';
-import ProfileScreen from './screens/ProfileScreen';
 
 const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="Profile" component={ProfileScreen} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    // Write your NavigationContainer and Stack here
+
+
+
   );
 }
-jsx// screens/HomeScreen.jsx
+```
 
-import { View, Text, TouchableOpacity } from 'react-native';
-
+```jsx
+// HomeScreen.jsx
 export default function HomeScreen({ navigation }) {
   return (
-    <View className="flex-1 bg-white items-center justify-center">
-      <Text className="text-3xl font-bold text-gray-900 mb-6">Home Screen</Text>
-      <TouchableOpacity
-        className="bg-blue-500 px-8 py-3 rounded-xl"
-        onPress={() => navigation.navigate('Profile')}
-      >
-        <Text className="text-white font-bold text-base">Go to Profile</Text>
-      </TouchableOpacity>
-    </View>
+    // Write your HomeScreen JSX here
+
+
+
   );
 }
-jsx// screens/ProfileScreen.jsx
+```
 
-import { View, Text, TouchableOpacity } from 'react-native';
-
-export default function ProfileScreen({ navigation }) {
+```jsx
+// AboutScreen.jsx
+export default function AboutScreen({ navigation }) {
   return (
-    <View className="flex-1 bg-white items-center justify-center">
-      <Text className="text-3xl font-bold text-gray-900 mb-6">Profile Screen</Text>
-      <TouchableOpacity
-        className="bg-gray-300 px-8 py-3 rounded-xl"
-        onPress={() => navigation.goBack()}
-      >
-        <Text className="text-gray-800 font-bold text-base">Go Back</Text>
-      </TouchableOpacity>
-    </View>
+    // Write your AboutScreen JSX here
+
+
+
   );
 }
-Key navigation terms:
-NavigationContainer — Wraps your entire app. Required for navigation to work.
-Stack.Navigator — Manages a stack of screens. Like a stack of cards — you push new screens on top and pop them off to go back.
-Stack.Screen — Registers a screen with a name and a component.
-navigation.navigate('Profile') — Goes to the screen named 'Profile'.
-navigation.goBack() — Goes back to the previous screen.
-{ navigation } — Every screen component automatically receives the navigation object as a prop from React Navigation.
- 
-Passing Data Between Screens
-Often you'll want to pass data from one screen to another — like tapping on a post and going to a detail page with that post's info.
-jsx// Sending data (from HomeScreen)
-navigation.navigate('Profile', { userId: 42, name: 'Alice' });
+```
 
-// Receiving data (in ProfileScreen)
-export default function ProfileScreen({ route }) {
-  const { userId, name } = route.params;
+---
 
-  return (
-    <View className="flex-1 items-center justify-center">
-      <Text className="text-2xl font-bold">User #{userId}</Text>
-      <Text className="text-lg text-gray-600">{name}</Text>
-    </View>
-  );
-}
-route.params — This is where the data you passed with navigate() shows up. route is automatically given to every screen just like navigation.
- 
-Custom Components — Reusing Your Work
-One of the most powerful things in React Native (and React) is making your own reusable components. Instead of writing the same code over and over, you write it once and reuse it everywhere.
-jsx// components/Button.jsx
+## Section 16 — Custom Components & Common Mistakes
 
-import { TouchableOpacity, Text } from 'react-native';
+### Exercise 16.1 — Custom Component Analysis
+Study the reusable `Button` component from your notes and answer the questions.
 
+```jsx
 export default function Button({ label, onPress, color = 'bg-blue-500', textColor = 'text-white' }) {
   return (
     <TouchableOpacity
@@ -576,112 +961,154 @@ export default function Button({ label, onPress, color = 'bg-blue-500', textColo
     </TouchableOpacity>
   );
 }
-Now you can use this button anywhere:
-jsximport Button from './components/Button';
+```
 
-// A blue button (default)
-<Button label="Sign In" onPress={() => console.log('signed in')} />
+1. What does `color = 'bg-blue-500'` mean in the parameter list? ______________________
 
-// A red button
-<Button label="Delete" onPress={() => console.log('deleted')} color="bg-red-500" />
+   ___________________________________________________________________________________
 
-// A green button
-<Button label="Save" onPress={() => console.log('saved')} color="bg-green-500" />
-color = 'bg-blue-500' — This is a default prop value. If no color prop is provided when using the component, it automatically uses 'bg-blue-500'.
- 
-Common Mistakes To Avoid
-Forgetting to wrap text in <Text>
-In React Native, you cannot put raw text directly in a View. It must always be inside <Text>.
-jsx// Wrong
+2. Write the JSX to render a **green** button with label `"Save"`: ______________________
+
+3. Write the JSX to render a **red** button with label `"Delete"`: ______________________
+
+4. What happens if you use `<Button label="Go" onPress={() => {}} />` without a `color` prop? ______________________
+
+---
+
+### Exercise 16.2 — Spot & Fix the Bug
+Each snippet has a common beginner mistake. Identify and correct it.
+
+**Bug 1:**
+```jsx
 <View>Hello World</View>
+```
+_Problem:_ __________________________________________________________________________
 
-// Correct
-<View>
-  <Text>Hello World</Text>
-</View>
-Using web HTML tags
-There's no div, p, h1, span, img, or button in React Native.
-jsx// Wrong (web HTML)
-<div className="p-4">
-  <h1>Title</h1>
-  <button>Click</button>
-</div>
+_Fixed:_
+```jsx
 
-// Correct (React Native)
-<View className="p-4">
-  <Text className="text-2xl font-bold">Title</Text>
-  <TouchableOpacity>
-    <Text>Click</Text>
-  </TouchableOpacity>
-</View>
-Forgetting flex-1 on the root container
-In React Native, elements don't automatically fill the screen. You often need flex-1 on your outermost container.
-jsx// Screen might appear empty or tiny
-<View className="bg-white">...</View>
+```
 
-// Takes up the full screen
-<View className="flex-1 bg-white">...</View>
-Not importing components
-Every component you use from React Native must be imported.
-jsx// Will crash - Image not imported
+**Bug 2:**
+```jsx
 import { View, Text } from 'react-native';
-<Image source={...} />
+<Image source={require('./photo.png')} />
+```
+_Problem:_ __________________________________________________________________________
 
-// Correct
-import { View, Text, Image } from 'react-native';
-<Image source={...} />
- 
-Quick Reference — Most Used Components
-Here's a cheat sheet of the components you'll use most often:
-View — A box/container. The building block of every screen.
-Text — Display any text on screen.
-TextInput — A field where the user can type.
-TouchableOpacity — A pressable element. Use it for buttons and anything tappable. Fades slightly when tapped.
-Pressable — A newer, more powerful version of TouchableOpacity. Gives you more control.
-Image — Display an image.
-ScrollView — A scrollable container for mixed content.
-FlatList — An optimized list for rendering large arrays of data.
-SafeAreaView — A container that respects the phone's safe areas (notch, status bar).
-Modal — A popup that appears over the current screen.
-ActivityIndicator — A spinning loading circle.
-Switch — An on/off toggle switch.
- 
-Quick Reference — Most Used Tailwind Classes in React Native
-Layout:
-flex-1 — fill remaining space
-flex-row — side by side
-flex-col — stacked (default)
-items-center — center on cross axis
-justify-center — center on main axis
-justify-between — space between children
-gap-2, gap-4 — space between children
-Spacing:
-p-4 — padding all sides
-px-4 — padding horizontal
-py-4 — padding vertical
-m-4 — margin all sides
-mt-4, mb-4, ml-4, mr-4 — margin on one side
-Colors:
-bg-white, bg-gray-100, bg-blue-500 — backgrounds
-text-white, text-gray-700, text-blue-600 — text color
-Borders:
-rounded-lg, rounded-xl, rounded-full — border radius
-border, border-2 — border width
-border-gray-300 — border color
-Text:
-text-sm, text-base, text-lg, text-xl, text-2xl — font size
-font-bold, font-semibold, font-medium — font weight
-text-center, text-left, text-right — alignment
-Sizing:
-w-full — full width
-w-1/2 — half width
-h-10, h-16, h-screen — height
- 
-Summary — What You've Learned
-You started by understanding what React Native is — a tool to build mobile apps for both Android and iPhone using JavaScript.
-You then saw how regular React (for websites) is different from React Native — different component names, different styling approaches, and different available elements.
-You learned what Tailwind CSS is and how it replaces long CSS files with short, descriptive class names that you apply directly in your code.
-You discovered NativeWind, the bridge that brings Tailwind into React Native, letting you use className just like in web development.
-You built a login screen, a contacts list, a multi-screen app with navigation, and custom reusable components — all using NativeWind styling.
-And you learned the most common mistakes to avoid so your code doesn't crash.
-The best way to truly learn this stuff is to build things. Take the examples above and modify them. Change colors, add new fields, create new screens. Break things and fix them. That's how real developers learn. You've got everything you need right here to get started.
+_Fixed:_
+```jsx
+
+```
+
+**Bug 3:**
+```jsx
+<View className="bg-white">
+  <Text>This screen looks empty!</Text>
+</View>
+```
+_Problem:_ __________________________________________________________________________
+
+_Fixed:_
+```jsx
+
+```
+
+**Bug 4:**
+```jsx
+<div className="p-4">
+  <h1>Welcome</h1>
+  <button>Press Me</button>
+</div>
+```
+_Problem:_ __________________________________________________________________________
+
+_Fixed:_
+```jsx
+
+```
+
+---
+
+### Exercise 16.3 — Quick Reference Quiz
+Without looking at your notes, name the React Native component for each task.
+
+| Task | Component |
+|------|-----------|
+| Display any text on screen | |
+| A scrollable container for large lists | |
+| A tappable element (for buttons) | |
+| An on/off toggle switch | |
+| A spinning loading indicator | |
+| A popup over the current screen | |
+| A container that respects the phone's safe areas | |
+| Where users type text | |
+| Display an image | |
+| A scrollable container for mixed content | |
+
+---
+
+### Exercise 16.4 — Final Challenge: Profile Card
+
+> **Challenge:** Using React Native and NativeWind, build a `ProfileCard` component with ALL of the following:
+> 1. A circular avatar showing the first letter of the name (e.g. "D" for "Daniel").
+> 2. The user's full name in bold large text.
+> 3. Their job title in smaller gray text.
+> 4. A **Follow** button that toggles to **Unfollow** when tapped — use `useState`.
+> 5. Style everything using NativeWind `className` only — no `StyleSheet.create()`.
+
+```jsx
+import { View, Text, TouchableOpacity } from 'react-native';
+import { useState } from 'react';
+
+export default function ProfileCard({ name, jobTitle }) {
+  // Write your code here
+
+
+
+
+}
+```
+
+**Bonus:** Add a second piece of state called `followerCount` that starts at `128`. When the Follow button is tapped, increase it by 1. When Unfollow is tapped, decrease it by 1. Display the count below the button.
+
+```jsx
+{/* Bonus follower count display */}
+
+```
+
+---
+
+## Bonus Challenge — Build a Full Mini App
+
+> **Instructions:** Using everything you have learned, build a mini contacts app with the following screens:
+>
+> - **HomeScreen:** A title "My Contacts" and a `FlatList` showing at least 4 contacts (name + role).
+> - **DetailScreen:** When a contact is tapped on HomeScreen, navigate to DetailScreen and display their full name and role using `route.params`.
+> - Use NativeWind for all styling.
+> - Create a reusable `ContactCard` component for each list item.
+
+Sketch your component structure here before coding:
+
+```
+App.js
+├── HomeScreen
+│   └── ContactCard (reusable)
+└── DetailScreen
+```
+
+_Notes / Planning:_
+
+___________________________________________________________________________________
+
+___________________________________________________________________________________
+
+___________________________________________________________________________________
+
+---
+
+*The best way to truly learn this is to build things. Take these examples, modify them, add features, and break things on purpose — then fix them. That is how real developers learn.*
+
+---
+
+**End of Workbook**
